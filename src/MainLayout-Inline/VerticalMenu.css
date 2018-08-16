@@ -1,0 +1,32 @@
+
+.wrapper {
+  overflow: auto;
+}
+.nav {
+  background: black;
+  width: 100%;
+  /* height: 50px; */
+  color: gray;
+  text-align: right;
+}
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+nav ul li  {
+  background: black;
+  border: hidden;
+  border-radius: 4px;
+  list-style-type: none;
+  margin: 4px;
+  padding: 10px;
+  display: block;
+  color: #fff;
+  text-align: end;
+
+}
+nav ul li:hover {
+  background: #ed1556;
+  opacity: 22;
+}
+
