@@ -1,32 +1,32 @@
 
-.wrapper {
+.container {
   overflow: auto;
 }
-.nav {
+.verticalNav {
   background: black;
   width: 100%;
-  /* height: 50px; */
+  height: auto;
   color: gray;
   text-align: right;
+  position: relative;
 }
-nav ul {
+.verticalNav ul {
   padding: 0;
   margin: 0;
 }
-nav ul li  {
+.verticalNav ul li  {
   background: black;
   border: hidden;
   border-radius: 4px;
   list-style-type: none;
-  margin: 4px;
-  padding: 10px;
-  display: block;
+  margin: 1px;
+  padding: 10px; 
   color: #fff;
   text-align: end;
+  display: block;
 
 }
-nav ul li:hover {
+.verticalNav ul li:hover {
   background: #ed1556;
-  opacity: 22;
 }
 
