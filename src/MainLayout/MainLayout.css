@@ -1,13 +1,12 @@
 .wrapper {
-  overflow: auto;
+  display: flex;
 }
 
-#main {
-  margin-left: 4px;
+.flexColumn {
+  flex-direction: column;
 }
-#content {
-  margin-left: 4px;
-  margin-top: 20px;
+.flexEnd {
+  justify-content: flex-end;
 }
 .nav {
   background: black;
@@ -15,15 +14,15 @@
   height: 50px;
   color: gray;
   text-align: right;
+  list-style: none;
 }
-
 nav ul {
   padding: 0;
   margin: 0;
 }
 
 nav ul li {
-  display: inline-block;
+  display: flex;
   list-style-type: none;
   margin: 0;
   padding: 10px 0;
@@ -42,6 +41,33 @@ nav ul li a:hover {
   text-decoration: none;
 }
 
+#main {
+  margin-left: 4px;
+}
+#content {
+  margin-left: 4px;
+  margin-top: 20px;
+}
+
+.active {
+  background-color: #b17e95;
+  color: white;
+}
+
+nav .icon {
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  .nav li:not(:first-child) {
+    display: none;
+  }
+  .nav li.icon {
+    display: flex;
+  }
+  .full-screen {
+    visibility: hidden;
+  }
+}
 @media screen and (max-width: 4223px) {
   .full-screen {
     background: green;
@@ -50,10 +76,5 @@ nav ul li a:hover {
 @media screen and (max-width: 1024px) {
   .full-screen {
     background: red;
-  }
-}
-@media screen and (max-width: 480px) {
-  .full-screen {
-    visibility: hidden;
   }
 }

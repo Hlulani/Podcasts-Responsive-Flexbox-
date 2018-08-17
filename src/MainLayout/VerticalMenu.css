@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+}
+.verticalNav {
+  background: black;
+  width: 100%;
+  height: auto;
+  color: gray;
+  text-align: right;
+  position: relative; 
+}
+.verticalNav ul {
+  padding: 0;
+  margin: 0;
+}
+.verticalNav ul li  {
+  background: black;
+  border: hidden;
+  border-radius: 4px;
+  list-style-type: none;
+  margin: 1px;
+  padding: 10px; 
+  color: #fff;
+  text-align: end;
+  display: flex;
+}
+.verticalNav ul li:hover {
+  background: #ed1556;
+}
