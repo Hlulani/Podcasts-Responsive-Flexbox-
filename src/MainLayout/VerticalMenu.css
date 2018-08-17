@@ -7,7 +7,7 @@
   height: auto;
   color: gray;
   text-align: right;
-  position: relative;
+  position: relative; 
 }
 .verticalNav ul {
   padding: 0;
@@ -22,7 +22,7 @@
   padding: 10px; 
   color: #fff;
   text-align: end;
-  display: block;
+  display: flex;
 }
 .verticalNav ul li:hover {
   background: #ed1556;

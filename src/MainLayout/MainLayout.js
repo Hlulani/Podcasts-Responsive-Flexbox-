@@ -19,7 +19,7 @@ class MainLayout extends React.Component {
 
   render() {
     return (
-      <div className="wrapper flexColumn flexHeight whiteBackground">
+      <div className="wrapper flexColumn whiteBackground">
         <nav className="wrapper">
           <ul className="nav wrapper flexEnd">
             <li className="active">Home</li>
